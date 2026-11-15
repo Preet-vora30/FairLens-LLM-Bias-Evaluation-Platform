@@ -1,0 +1,14 @@
+from fastapi import APIRouter
+from app.core.config import settings
+
+router = APIRouter(tags=["Health"])
+
+
+@router.get("/health")
+def health_check():
+    """Simple liveness probe for the FairLens AI backend."""
+    return {
+        "status": "healthy",
+        "project": settings.PROJECT_NAME,
+        "version": settings.VERSION,
+    }

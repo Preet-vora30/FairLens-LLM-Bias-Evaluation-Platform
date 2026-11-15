@@ -1,0 +1,15 @@
+# FairLens AI Backend
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.env
+fairlens.db
+cache/
+reports/
+.pytest_cache/
+
+# ML model weights & datasets (never commit)
+*.safetensors
+*.bin

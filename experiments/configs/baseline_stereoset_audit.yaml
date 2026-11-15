@@ -1,0 +1,22 @@
+# FairLens AI Baseline Experiment Configuration
+
+research_question: "Does the target pretrained LM exhibit stereotype preference on paired benchmarks?"
+hypothesis: "Encoder-based likelihood scoring will reveal a stereotype preference rate differing from parity (50%)."
+
+models:
+  - model_distilbert
+  - model_fast_reference
+
+dataset_id: ds_crows_pairs
+
+categories:
+  - gender
+  - race-color
+
+metrics:
+  - stereotype_pref_rate
+
+sample_limit: 10
+seed: 42
+
+notes: "Small CPU-friendly subset for reproducible smoke evaluation."

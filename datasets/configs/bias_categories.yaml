@@ -1,0 +1,19 @@
+# FairLens AI — Bias Category Definitions
+
+Categories are configurable and extensible. Each category documents definition, benchmarks, metrics,
+scoring direction, limitations, supported architectures, and sample size.
+
+- gender: Gender stereotypes (occupation, family, personality associations).
+- race: Race and ethnicity (where benchmark data permit).
+- religion: Religious group associations.
+- profession: Occupational stereotype associations.
+- culture: Cultural / national representation.
+- socioeconomic: Socioeconomic stereotypes.
+- age: Age-related associations.
+- disability: Disability-related associations.
+- social: Social / demographic general associations.
+- counterfactual: Counterfactual consistency checks.
+- harmful: Potentially harmful generated content screening (where supported).
+
+Researchers can add new categories without backend rewrites by extending the evaluation category
+configuration and metric mapping.

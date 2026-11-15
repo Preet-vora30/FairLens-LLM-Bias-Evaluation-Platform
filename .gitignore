@@ -1,0 +1,31 @@
+# FairLens AI — Environment ignores
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# Database & generated artifacts
+*.db
+backend/fairlens.db
+backend/cache/
+backend/reports/
+backend/.pytest_cache/
+
+# ML model weights / datasets (keep repo small)
+*.safetensors
+*.bin
+cache/
+
+# Frontend
+frontend/node_modules/
+frontend/dist/
+
+# Misc
+.env
+.env.local
+.DS_Store
+logs/
+*.log
+report.json
